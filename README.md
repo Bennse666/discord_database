@@ -60,4 +60,3 @@ async def load(ctx,key):
 #### fix load
 #### 1.0.0
 #### first version
-'''
