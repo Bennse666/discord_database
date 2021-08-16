@@ -10,7 +10,6 @@ def help():
     globals.save:save user data in global,arguments:ctx,key,item
     locals.plus:plus a number to a key,argquments:ctx,key,item(float)
     globals.plus:plus a number to a key in global,argquments:ctx,key,item(float)
-    
     '''
     print(helps)
     return helps

@@ -11,6 +11,8 @@ class locals():
             with open(filename+'.discord_db', 'w')as f:
                 f.write('{"local":{}}')
         self.filename=filename
+
+
     def new(self,ctx):
         with open(self.filename+'.discord_db')as f:
             db=json.load(f)
@@ -33,6 +35,8 @@ class locals():
         with open(self.filename+'.discord_db','w')as f:
             json.dump(db,f)
         return db['local'][str(ctx.message.guild.id)][str(ctx.author.id)][key]
+
+        
     def load(self,ctx,key):
         with open(self.filename+'.discord_db')as f:
             db=json.load(f)
