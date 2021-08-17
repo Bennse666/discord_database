@@ -34,7 +34,7 @@ class globals():
 
     def plus(self,ctx,key,item:float):
         if not isinstance(item, float) and not isinstance(item, int):
-            yield TypeError('plus only can use int or float')
+            yield TypeError('The "plus" only can use the "int" or "float" types!')
             return
         with open(self.filename+'.discord_db')as f:
             db=json.load(f)
