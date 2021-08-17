@@ -53,8 +53,25 @@ async def load(ctx,key):
     #load item
     await ctx.send(db.load(ctx,key))
 ```
-## Changelogs:
+## web UI
+```python
+import discord_database
+from discord_database import web
+db=discord_database.locals('test')
+webs=web.locals('test')
+webs.run()
 
+#or
+import discord_database
+from discord_database import web
+db=discord_database.globals('test')
+webs=web.globals('test')
+webs.run()
+```
+### web server need  [pywebio](https://pypi.org/project/pywebio/) , it can auto install
+## Changelogs:
+#### 1.0.2
+#### fix something(power by [AstroOrbis](https://github.com/AstroOrbis)) , web UI
 #### 1.0.1
 #### fix load
 
