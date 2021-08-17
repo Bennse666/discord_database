@@ -7,7 +7,7 @@ def long_description():
 setup(
     name='discord_database',
 
-    version='1.0.1',
+    version='1.0.2',
 
     description='a database for discord.py',
 
