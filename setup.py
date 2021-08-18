@@ -7,7 +7,7 @@ def long_description():
 setup(
     name='discord_database',
 
-    version='1.0.2',
+    version='1.0.3',
 
     description='a database for discord.py',
 
@@ -24,7 +24,7 @@ setup(
     packages=find_packages(),
 
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',  
         'Operating System :: OS Independent',
