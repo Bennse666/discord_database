@@ -15,23 +15,23 @@ async def on_ready():
     print('------------------------------------------')
 @bot.command()
 async def new(ctx):
-    #add a new user
+    #Adds a new user
     await ctx.send(db.new(ctx))
 @bot.command()
 async def save(ctx,key,item):
-    #save/create a item
+    #Creates ("saves") a new item
     await ctx.send(db.save(ctx,key,item))
 @bot.command()
 async def load(ctx,key):
-    #load item
+    #Loads an item
     await ctx.send(db.load(ctx,key))
 ```
-# if you went to change to use global , change locals to globals like this:
+# If you want to use globals instead of locals, switch them around accordingly:
 ```python
 from discord_database import globals
-# connect to database
+# Conncets to the database
 db=globals('test')
-# create a bot
+# Declares the bot
 import discord
 from discord.ext import commands
 bot = commands.Bot(command_prefix='$')
@@ -42,21 +42,21 @@ async def on_ready():
     print('------------------------------------------')
 @bot.command()
 async def new(ctx):
-    #add a new user
+    #Adds a new user
     await ctx.send(db.new(ctx))
 @bot.command()
 async def save(ctx,key,item):
-    #save/create a item
+    #Saves (creates) a new item
     await ctx.send(db.save(ctx,key,item))
 @bot.command()
 async def load(ctx,key):
-    #load item
+    #Loads an item
     await ctx.send(db.load(ctx,key))
 ```
 ## Changelogs:
 
 #### 1.0.1
-#### fix load
+#### Fix the "load" command
 
 #### 1.0.0
-#### first version
+#### Initial release
