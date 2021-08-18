@@ -22,7 +22,6 @@ class globals():
     def save(self,ctx,key,item):
         with open(self.filename+'.discord_db')as f:
             db=json.load(f)
-        
         db['global'][str(ctx.author.id)][key]=item
         with open(self.filename+'.discord_db','w')as f:
             json.dump(db,f)
