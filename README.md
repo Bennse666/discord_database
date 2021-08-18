@@ -1,6 +1,6 @@
 ## A database manager for Discord!
 
-![discord_database_icon]https://github.com/cutebear0123/cutebear0123/blob/main/databasedatabase.png?raw=true()
+[![discord_database_icon](https://github.com/cutebear0123/cutebear0123/blob/main/databasedatabase.png?raw=true)]()
 
 ### Example:
 ```python
