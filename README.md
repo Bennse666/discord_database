@@ -57,5 +57,5 @@ async def load(ctx,key):
     #Loads an item
     await ctx.send(db.load(ctx,key))
 ```
-## Changelogs: CHANGELOGS.md
+## [Changelogs](https://github.com/cutebear0123/discord_database/blob/main/CHANGELOGS.md)
 ## more Examples and useage are in the [wiki](https://github.com/cutebear0123/discord_database/wiki).
