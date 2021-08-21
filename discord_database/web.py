@@ -93,5 +93,5 @@ class locals():
                 json.dump(db,f)
         run_js("location.reload(true);")
 
-    def run(self):
-        start_server(self.main,port=8080,debug=True)
+    def run(self,port=8080):
+        start_server(self.main,port=port,debug=True)
