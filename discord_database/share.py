@@ -123,5 +123,5 @@ class globals:
         with open(globals.filename+'.discord_db','w')as f:
             json.dump(db,f)
         return db['global'][request.json['user']][request.json['key']]
-    def run():
-        globals.app.run(host='0.0.0.0', port=8888)
+    def run(port):
+        globals.app.run(host='0.0.0.0', port=port)
