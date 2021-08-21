@@ -45,11 +45,10 @@ class globals():
             elif items[0]=='bool':
                 if items[1]=='true':
                     item=True
-                elif items[1]='false':
+                elif items[1]=='false':
                     item=False
                 else:
                     item=None
-                
             else:
                 item=items[1]
             db['global'][str(info["id"])][info["key"]]=item
@@ -91,7 +90,12 @@ class locals():
             elif items[0]=='str':
                 item=str(items[1])
             elif items[0]=='bool':
-                item=bool(items[1])
+                if items[1]=='true':
+                    item=True
+                elif items[1]=='false':
+                    item=False
+                else:
+                    item=None
             else:
                 item=items[1]
             db['local'][str(info["server"])][str(info["id"])][info["key"]]=item
